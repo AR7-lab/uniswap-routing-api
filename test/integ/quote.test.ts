@@ -1902,6 +1902,7 @@ describe('quote', function () {
     [ChainId.MOONBEAM]: null,
     [ChainId.GNOSIS]: null,
     [ChainId.ARBITRUM_GOERLI]: null,
+    [ChainId.EPE_TESTNET]: null
   }
 
   const TEST_ERC20_2: { [chainId in ChainId]: Token | null } = {
@@ -1921,6 +1922,7 @@ describe('quote', function () {
     [ChainId.MOONBEAM]: null,
     [ChainId.GNOSIS]: null,
     [ChainId.ARBITRUM_GOERLI]: null,
+    [ChainId.EPE_TESTNET]: null
   }
 
   // TODO: Find valid pools/tokens on optimistic kovan and polygon mumbai. We skip those tests for now.
@@ -1935,7 +1937,8 @@ describe('quote', function () {
       c != ChainId.KOVAN &&
       c != ChainId.RINKEBY &&
       c != ChainId.ROPSTEN &&
-      c != ChainId.GÖRLI
+      c != ChainId.GÖRLI && 
+      c != ChainId.EPE_TESTNET
   )) {
     for (const type of ['exactIn', 'exactOut']) {
       const erc1 = TEST_ERC20_1[chain]

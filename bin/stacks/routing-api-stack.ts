@@ -23,6 +23,7 @@ export const CHAINS_NOT_MONITORED: ChainId[] = [
   ChainId.OPTIMISTIC_KOVAN,
   ChainId.GÖRLI,
   ChainId.POLYGON_MUMBAI,
+  ChainId.EPE_TESTNET
 ]
 
 export class RoutingAPIStack extends cdk.Stack {

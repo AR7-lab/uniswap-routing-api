@@ -56,6 +56,7 @@ export const SUPPORTED_CHAINS: ChainId[] = [
   ChainId.GÖRLI,
   ChainId.CELO,
   ChainId.CELO_ALFAJORES,
+  ChainId.EPE_TESTNET
 ]
 const DEFAULT_TOKEN_LIST = 'https://gateway.ipfs.io/ipns/tokens.uniswap.org'
 
